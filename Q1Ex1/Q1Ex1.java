@@ -16,23 +16,64 @@ public class JavaProject1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String codename1 = "Scared Cat";
-        String codename2 = "Hunter";
-        String codename3 = "Extinction";
+        String pokemon1 = "Charmander";
+        String pokemon2 = "Squirtle";
+        String pokemon3 = "Bulbasaur";
         
-        String type1 = "Black Bear";
-        String type2 = "Brown Bear";
-        String type3 = "Polar Bear";      
+        String type1 = "Fire";
+        String type2 = "Water";
+        String type3 = "Grass";      
      
-        int age1 = 37;
-        int age2 = 39;
-        int age3 = 48;
+        int pokedexNo1 = 4;
+        int pokedexNo2 = 7;
+        int pokedexNo3 = 1;
         
-        String escOpt1 = "Taunt";
-        String escOpt2 = "Play Dead";
-        String escOpt3 = "No Escape";
+        String move1 = "Flamethrower";
+        String move2 = "Water Pulse";
+        String move3 = "Seed Bomb";
         
-        System.out.printf();
+        boolean pokeNumber;
+        if (pokedexNo3 == pokedexNo2){
+            pokeNumber = true;      
+        }
+        else{
+            pokeNumber = false; 
+        }
+        
+        boolean pokeChecker;
+        if (pokedexNo2 > pokedexNo1){
+            pokeChecker = true;      
+        }
+        else{
+            pokeChecker = false; 
+        }
+        
+        boolean typeCheck = type1.equals(type3);
+ 
+        System.out.printf("Pokemon 1: %s\n", pokemon1);
+        System.out.printf("Type: %s\n", type1);
+        System.out.printf("Pokedex Number: %d\n", pokedexNo1);
+        System.out.printf("Base Move: %s\n", move1);
+        
+        System.out.println("");
+        
+        System.out.printf("Pokemon 2: %s\n", pokemon2);
+        System.out.printf("Type: %s\n", type2);
+        System.out.printf("Pokedex Number: %d\n", pokedexNo2);
+        System.out.printf("Base Move: %s\n", move2);
+        
+        System.out.println("");
+        
+        System.out.printf("Pokemon 3: %s\n", pokemon3);
+        System.out.printf("Type: %s\n", type3);
+        System.out.printf("Pokedex Number: %d\n", pokedexNo3);
+        System.out.printf("Base Move: %s\n", move3);
+        
+        System.out.println("");
+   
+        System.out.printf("Do Bulbasaur and Squirtle have the same pokedex number: %s \n", pokeNumber);
+        System.out.printf("Did Charmander go first than Squirtle in the pokedex: %s \n", pokeChecker);
+        System.out.printf("Do Charmander and Bulbasaur have the same type: %s \n", typeCheck);
         
     }
     
