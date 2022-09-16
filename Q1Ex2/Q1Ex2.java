@@ -8,7 +8,7 @@ package ex2.pkg2.pkg0;
  *
  * @author giano
  */
-public class Ex220 {
+public class Q1Ex2 {
 
     /**
      * @param args the command line arguments
